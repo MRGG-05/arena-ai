@@ -568,7 +568,7 @@ export class Plant {
     const P = cam.project(o.p[0], o.p[1], o.p[2]);
     const Ls = cam.lin(o.L[0], o.L[1], o.L[2]);
     const m = Math.hypot(Ls[0], Ls[1]) / cam.s;
-    const tier = hPx > 1100 ? 2048 : hPx > 560 ? 1024 : hPx > 250 ? 640 : 320;
+    const tier = hPx > 560 ? 1024 : hPx > 250 ? 640 : 320;
     const lv = o.r * (BUD_LEVELS - 1);
     const level = Math.round(lv);
     const dl = lv - level;
